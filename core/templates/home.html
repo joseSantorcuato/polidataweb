@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+//{% load static %}
+
+
+{% block content %}
+<!-- Contenido específico de la sección -->
+<div class="full-screen-image">
+    <img src="{% static 'img/ui.png' %}" alt="Imagen a pantalla completa">
+    <div class="container">
+        <h1>Título de la sección</h1>
+        <p>Contenido de la sección</p>
+        <!-- Agrega aquí lo que quieras mostrar en esta vista -->
+    </div>
+</div>
+{% endblock %}

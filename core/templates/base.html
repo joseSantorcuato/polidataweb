@@ -1,0 +1,165 @@
+
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="{% static 'materialize/css/materialize.css' %}" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/estilos.css' %}">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <style>
+        /* Estilo para la primera sección con la imagen de fondo */
+        
+    </style>
+    <title>Polidata | Dataset, AI</title>
+    
+</head>
+<body>
+
+    <nav>
+        <div class="nav-wrapper light">
+            <!-- Logo o título -->
+            <a href="#" class="brand-logo">
+               <!--  <img src="{% static 'img/polidata.png' %}" alt="Polidata" class="imagen-pequena"> -->
+               <span class="titulo-topbar">Polidata::<span class="dots"></span></span>
+              </a>
+            <!-- Menú lateral trigger -->
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+            <!-- Enlaces a secciones -->
+            <ul class="right hide-on-med-and-down">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#proyecto">Proyecto</a></li>
+                <li><a href="#evaluacion">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <!-- Menú lateral -->
+    <!-- Contenido del side menu -->
+    <ul id="mobile-demo" class="sidenav">
+        <!-- Tus elementos del menú -->
+        <br>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#proyecto">Proyecto</a></li>
+        <li><a href="#evaluacion">Contacto</a></li>
+    </ul>
+
+    <!-- Primera sección con la imagen de fondo -->
+    <section class="first-section" id="home">
+        <div class="container">
+            <div class="content-container" style="margin-top: -200px;">
+                <h1 class="titulo-home" style="margin-left: 0px; text-align: left;">Polidata::</h1>
+                <p style="margin-left: 0px; text-align: left;">Bla bla</p>
+            </div>
+        </div>
+    </section>
+    <div class="divisor"></div>
+    <!-- Sección de proyecto -->
+    <section id="proyecto" style="margin-top: 50px;">
+     
+         
+          <div class="container">
+            <h4 class="titulo-cat" style="margin-top: 100px;">Proyecto</h4>
+            <div class="row">
+
+
+              <div class="col s12 m4">
+                <div class="card opacity-50 card-cyan ">
+                  <!-- Contenido de la tarjeta -->
+                  <div class="card-content center-align">
+                    <!-- Imagen con la clase del icono -->
+                    <div class="icon-container">
+                      <img src="{% static '/img/aicyan.png' %}" class="material-icons large icon-ai" alt="AI">
+                    </div>
+                    <span class="card-title title-above"><b>Evsdgsdgsdgs</b></span>
+                    <p class="card-description">Sube la ddiwegdwyegfuywe</p>
+                    <a href="{% url 'evaluacion' %}" class="round-button-cyan">
+                      <button>Ver más</button>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            
+              <div class="col s12 m4">
+                <div class="card opacity-50 card-pink">
+                  <!-- Contenido de la tarjeta -->
+                  <div class="card-content center-align">
+                    <!-- Imagen con la clase del icono -->
+                    <div class="icon-container">
+                      <img src="{% static '/img/mobilepink.png' %}" class="material-icons large icon-ai" alt="AI">
+                    </div>
+                    <span class="card-title title-above"><b>Sidsgsdg</b></span>
+                    <p class="card-description">Aquí puedesgsdg AI.</p>
+                    <a href="{% url 'sistemas' %}" class="round-button-pink">
+                      <button>Ver más</button>
+                    </a>
+
+                  </div>
+                </div>
+              </div>
+            
+              <div class="col s12 m4">
+                <div class="card opacity-50 card-purple">
+                  <!-- Contenido de la tarjeta -->
+                  <div class="card-content center-align">
+                    <!-- Imagen con la clase del icono -->
+                    <div class="icon-container">
+                      <img src="{% static '/img/learningpurple.png' %}" class="material-icons large icon-ai" alt="AI">
+                    </div>
+                    <span class="card-title title-above"><b>Aprendizaje</b></span>
+                    <p class="card-description">Aquí puedes encontrar información sobre AI.</p>
+                    <a href="{% url 'aprendizaje' %}" class="round-button-purple">
+                      <button>Ver más</button>
+                    </a>
+
+                  </div>
+                </div>
+              </div>
+                    
+                    </div>
+                  </div>
+        </div>
+    </section>
+    
+    
+    
+    
+    
+    
+
+    <!-- Sección de Home 
+    <section id="home">
+        <div class="container">
+            <h4>Home</h4>
+            Contenido de Home 
+        </div>
+    </section>-->
+
+
+    <script src="{% static 'materialize/js/jquery-3.7.1.js' %}"></script>
+    <script src="{% static 'materialize/js/materialize.js' %}"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Inicialización del side menu
+            var elems = document.querySelectorAll('.sidenav');
+            var instances = M.Sidenav.init(elems, {});
+        });
+
+/* JavaScript */
+
+
+
+
+    </script>
+   
+</body>
+ <footer class="grey darken-4 white-text center-align">
+      <div class="container">
+          <div class="row">
+              <div class="col s12">
+                  <p>Este es el pie de página. Puedes agregar aquí información relevante, enlaces útiles, créditos, etc.</p>
+              </div>
+          </div>
+      </div>
+  </footer>
+</html>
